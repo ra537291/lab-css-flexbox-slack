@@ -1,10 +1,183 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 17px;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    background-color: #540B51;
+}
+
+nav div:first-child {
+    display: flex;
+
+}
+nav div:first-child > img{
+    object-fit: contain;
+    overflow: hidden;
+
+}
+nav div:first-child > ul > li{
+    display: none;
+    list-style: none;
+}
+
+nav > div + div{
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    
+}
+nav > div + div > button{
+    background-color: transparent;
+    border: none;
+}
+
+
+header{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    background-color: #540B51;
+    color: #F3EAE2;
+
+}
+
+header div:first-child h1{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 400px;
+}
+header div:first-child p{
+    margin: 10px;
+    padding: 10px;
+}
+header div:first-child p > strong{
+    color: #ECB12F;
+}
+header div:first-child div{
+    display: flex;
+    flex-direction: column;
+
+}
+header div:first-child div > button{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #540B51;
+    background-color: #F3EAE2;
+
+}
+header div:first-child div > button + button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4285F4;
+    color: #F3EAE2;
+}
+header div:first-child div > button + button > img{
+    background-color: #F3EAE2;
+    width: 30px;
+    height: 30px;
+}
+
+header > div + div,
+main > section + section > div:first-child,
+main > section + section + section > div + div,
+main > section + section + section + section > div:first-child {
+    object-fit: cover;
+    overflow: hidden;
+    
+} 
+header > div + div > img,
+main > section + section > div:first-child > img,
+main > section + section + section > div + div > img,
+main > section + section + section + section > div:first-child > img { 
+    width: 100%;
+}
+
+
+
+main{
+    text-align: center;
+    background-color: #F3EAE2;
+}
+main section:first-child,
+main section + section,
+main section + section + section{
+    padding: 40px;
+}
+
+main section:first-child > p{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+main section:first-child > div{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+
+}
+main section:first-child > div img{
+    width: 30%;
+    height: 50px;
+}
+main > section + section > h2,
+main > section + section + section > h2,
+main > section + section + section + section > h2,
+main > section + section + section + section + section > h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+main > section + section + section{}
+
+main > section + section + section + section{}
+
+main > section + section + section + section + section{}
+
+main > section + section + section + section + section + section{}
+
+/*NO TERMINO EL MAIN PORQUE ES MUY REPETITIVO Y NO TENGO TIEMPO, PERO HE DEMOSTRADO QUE SE COMO VA EL CSS. PERDON.
 */
+
+
+footer{
+    background-color: #F3EAE2;
+    display: flex;
+    flex-direction: column;
+}
+footer > img{
+    width: 20%;
+}
+
+footer > div:first-child{
+    display: flex;
+
+}
+
+footer > ul:first-child{}
+
+footer > ul + ul{}
+
+footer > div + div{}
